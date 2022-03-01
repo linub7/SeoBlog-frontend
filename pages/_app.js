@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import NextNprogress from 'nextjs-progressbar';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <NextNprogress height={2} />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
